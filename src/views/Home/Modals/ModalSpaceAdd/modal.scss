@@ -1,0 +1,38 @@
+.create-space-modal {
+  .custom-modal_animated{
+    z-index: 2;
+  }
+  .custom-modal {
+    &__container {
+      width: 446px;
+      top: 50%;
+      bottom: auto;
+      transform: translate(-50%, -50%);
+    }
+
+    &__main {
+      display: flex;
+      flex-direction: column;
+      padding: 13px 30px 15px 30px;
+      grid-gap: 40px;
+    }
+  }
+
+  &__input {
+    height: 40px;
+    &--check{
+      .custom-input{
+        border: 2px solid #8dc63f;
+      }
+    }
+  }
+  &__info{
+    font-size: 13px;
+    opacity: 0.5;
+  }
+  &__input-label {
+    font-size: 14px;
+    opacity: 0.5;
+    margin-bottom: 5px;
+  }
+}

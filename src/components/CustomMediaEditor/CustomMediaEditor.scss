@@ -1,0 +1,66 @@
+.custom-media_editor{
+  background-color: #F6F7F8;
+  &__toolbar{
+    padding: 6px 5px;
+    display: flex;
+    align-items: center;
+    grid-gap: 10px;
+    border-bottom: 0.5px solid #d5d5d6;
+  }
+  &__icon{
+    min-width: 25px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    svg {
+      width: 14px;
+      height: 14px;
+    }
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  &__contain{
+    min-height: 108px;
+    display: flex;
+    align-items: center;
+  }
+  &__upload{
+    display: none;
+  }
+  &__img-show{
+    display: flex;
+    width: 120px;
+    height: 80px;
+    margin-left: 20px;
+    object-fit: contain;
+    object-position: center;
+  }
+  &__err{
+    color: red;
+    background-color: white;
+  }
+  &__preload{
+    position: relative;
+  }
+  &__close{
+    position: absolute;
+    right: 0;
+    top: -5px;
+    cursor: pointer;
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover{
+      transform: scale(1.1);
+    }
+  }
+}

@@ -1,0 +1,98 @@
+@import "../../variables.scss";
+
+.custom-input {
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &_error {
+        border: 2px solid $lightRed;
+        text-decoration: underline dotted $lightRed;
+    }
+
+    &__input {
+        width: 100%;
+        height: 100%;
+        padding: 9px;
+        border-radius: 4px;
+        background-color: $lightGrey;
+        &:disabled{
+            cursor: not-allowed;
+        }
+    }
+
+    &__image {
+        position: absolute;
+        top: 7px;
+        right: 7px;
+        height: 60%;
+        opacity: 0;
+        transition: 0.5s;
+
+        &_animated {
+            opacity: 1;
+            transition: 0.5s;
+        }
+    }
+
+    &__err-container {
+        min-width: 160px;
+        position: absolute;
+        top: 0;
+        left: 105%;
+        border: 1px solid black;
+        border-radius: 3px;
+        padding: 7px;
+        opacity: 0;
+        transition: 0.5s;
+
+        &_animated {
+            opacity: 1;
+            transition: 0.5s;
+        }
+    }
+
+    &__err-text {
+        font-size: 13px;
+        white-space: nowrap;
+    }
+
+    &__topright-err {
+        position: absolute;
+        top: -28px;
+        right: 0px;
+        font-size: 14px;
+        color: red;
+        display: flex;
+
+        p {
+            color: red;
+
+            &:first-child {
+                margin-right: 5px;
+            }
+        }
+    }
+
+    .custom-input-icon-container {
+        height: 100%;
+        padding: 0 13px;
+        background-color: $lightGrey;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            opacity: 0.5;
+        }
+    }
+
+    .custom-input-icon {
+        width: 13px;
+        height: 13px;
+    }
+}

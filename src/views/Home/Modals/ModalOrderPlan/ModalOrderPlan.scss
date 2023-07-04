@@ -1,0 +1,36 @@
+.modal-order{
+  .custom-modal__container{
+    max-width: 765px;
+    width: 100%;
+    top: 50%;
+    transform: translate(-50%, -50%)
+  }
+  &__wrapper{
+    margin-top: 15px;
+    font-size: 13px;
+  }
+  &__title{
+    margin-bottom: 17px;
+    font-size: 13px;
+    font-weight: normal;
+  }
+  &__text{
+    margin-top: 10px;
+    font-size: 13px;
+    opacity: 0.5;
+  }
+  &__options{
+    margin-top: 22px;
+  }
+  &__options-item{
+    margin-bottom: 13px;
+  }
+  .custom-checkbox{
+    .label{
+      opacity: 0.5;
+    }
+  }
+  &__price{
+    font-size: 13px;
+  }
+}

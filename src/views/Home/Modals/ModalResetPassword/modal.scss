@@ -1,0 +1,14 @@
+.delete-modal {
+    .custom-modal {
+        &__container {
+            width: 446px;
+            top: 50%;
+            bottom: auto;
+            transform: translate(-50%, -50%);
+        }
+
+        &__main {
+            text-align: center;
+        }
+    }
+}

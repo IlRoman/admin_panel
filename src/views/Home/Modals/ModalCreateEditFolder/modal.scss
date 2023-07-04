@@ -1,0 +1,24 @@
+.create-folder-modal {
+    .custom-modal {
+        &__container {
+            width: 446px;
+            top: 50%;
+            bottom: auto;
+            transform: translate(-50%, -50%);
+        }
+
+        &__main {
+            height: 100px;
+        }
+    }
+
+    &__input {
+        height: 40px;
+    }
+
+    &__input-label {
+        font-size: 14px;
+        opacity: 0.5;
+        margin-bottom: 5px;
+    }
+}

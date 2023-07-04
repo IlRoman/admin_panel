@@ -1,0 +1,24 @@
+.custom-chip {
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 15px;
+  margin: 20px auto 10px;
+  &__item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    grid-gap: 8px;
+    font-size: 13px;
+
+  }
+  &__text{
+    color: #2E2B2B;
+    word-break: break-word;
+  }
+  &__close{
+    &:hover{
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+  }
+}

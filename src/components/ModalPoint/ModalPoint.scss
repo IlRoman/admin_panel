@@ -1,0 +1,122 @@
+.point{
+  position: fixed;
+  border-radius: 3px;
+  background-color: #FFFFFF;
+  padding:25px 15px 15px 15px;
+  left: 33%;
+  top: 20%;
+  word-break: break-word;
+  /*&:after{
+    content: '';
+    position: absolute;
+    border: 8px solid transparent;
+    border-left: 9px solid #ffffff;
+    box-shadow: 0px 3px 15px #0000000F;
+    opacity: 0.5;
+    width: 0;
+    height: 0;
+    right: -17px;
+    top: 15px;
+  }*/
+  &--resible{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    max-height: 600px;
+    overflow: auto;
+    &::-webkit-scrollbar:horizontal{
+      height: 8px;
+      width: 8px;
+    }
+    &::-webkit-scrollbar-track-piece:horizontal{
+      border-radius:5px;
+      background:#cbcbcc;
+      background: linear-gradient(
+          to bottom,
+          #fff 0,
+          #fff 30%,
+          #cbcbcc 20%,
+          #cbcbcc 70%,
+          #fff 70%,
+          #fff 100%
+      );
+    }
+    &::-webkit-scrollbar-thumb:horizontal{
+      background: #8dc63f;
+      width: 4px;
+      //background-image: linear-gradient(to bottom, #cbcbcc 10%, #8dc63f 10% 60%, #cbcbcc 60%);
+    }
+  }
+  &__resize {
+    right: -5px;
+    bottom: -5px;
+    cursor: nwse-resize;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%; /*magic to turn square into circle*/
+    background: white;
+    border: 1px solid #4286f4;
+    position: absolute;
+  }
+  &__head{
+    display: flex;
+    align-items: flex-start;
+    overflow: auto;
+  }
+  &__icon{
+    flex-shrink: 0;
+    width: 34px;
+    height: 34px;
+    margin-right: 20px;
+    object-fit: contain;
+    object-position: center;
+  }
+  &__default-icon{
+    width: 34px;
+    height: 34px;
+    margin-right: 20px;
+    flex-shrink: 0;
+    circle{
+      fill: inherit;
+    }
+  }
+  &__title{
+    color: #2E2B2B;
+    font-size: 18px;
+  }
+  &__main{
+    margin-top: 10px;
+
+  }
+  &__media{
+    margin-top: 10px;
+    .img {
+      object-position: center;
+      object-fit: contain;
+      width: 100%;
+    }
+    .react-wrapper{
+    }
+  }
+  &--position{
+    left: 5%;
+    top: 20%;
+  }
+  &--more_right{
+    left: 41.5%;
+  }
+  &__close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: none;
+    outline: none;
+    user-select: none;
+    background-color: transparent;
+    font-size: 20px;
+    cursor: pointer;
+    &:hover{
+      transform: scale(1.1);
+    }
+  }
+}

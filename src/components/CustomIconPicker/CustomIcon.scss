@@ -1,0 +1,51 @@
+.custom-icon{
+  display: flex;
+  align-items: center;
+  grid-gap: 10px;
+  position: relative;
+  width: 100%;
+  flex-wrap: wrap;
+  &__button{
+    max-width: 104px;
+    width: 100%;
+  }
+  &__hex{
+    background: #F6F7F8;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 82px;
+    width: min-content;
+    border-radius: 4px;
+  }
+  &__color {
+    width: 34px;
+    height: 32px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  &__picker{
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+  &__preload{
+   margin-left: 20px;
+  }
+  &__error{
+    color: red;
+    min-width: 200px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  &__remove{
+    padding:10px;
+    cursor: pointer;
+    background-color: #d6d6d6;
+    border-radius: 5px;
+    font-size: 13px;
+  }
+}

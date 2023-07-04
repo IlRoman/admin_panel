@@ -1,0 +1,78 @@
+@import "../../index.scss";
+
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .main-block {
+        width: 336px;
+        margin-top: 64px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo {
+        width: 336px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            height: 100%;
+        }
+    }
+
+    .form {
+        margin-top: 86px;
+        width: 289px;
+
+        &__head {
+            margin-bottom: 29px;
+        }
+
+        &__title {
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        &__language {
+            width: 92px;
+            height: 20px;
+        }
+
+        &__input {
+            width: 100%;
+            margin-bottom: 20px;
+            height: 38px;
+            border-radius: 4px;
+            font-size: 13px;
+        }
+
+        &__button {
+            width: 100%;
+            margin-top: 21px;
+        }
+
+        &__bottom-text {
+            font-size: 13px;
+            margin-top: 29px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            span {
+                font-weight: 600;
+                cursor: pointer;
+                margin-left: 5px;
+            }
+        }
+    }
+
+    .text {
+        font-size: 13px;
+    }
+}

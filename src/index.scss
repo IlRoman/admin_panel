@@ -1,0 +1,148 @@
+@import "./variables.scss";
+
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: $black;
+
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    &::-webkit-scrollbar-track-piece {
+        border-radius: 20px;
+        background: linear-gradient(to right, #fff 20%, #cbcbcc 20%, #cbcbcc 80%, #ffff 80%);
+    }
+
+    &::-webkit-scrollbar-thumb {
+        border-radius: 20px;
+        width: 8px;
+        max-height: 21px;
+        min-height: 21px;
+        height: 21px;
+        background-color: #8dc63f;
+    }
+}
+
+body {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+.flex-sb {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+
+    @media (max-width: 1250px) {
+        gap: 20px;
+    }
+
+    @media (max-width: 1200px) {
+        gap: 15px;
+    }
+
+    @media (max-width: 1100px) {
+        gap: 10px;
+    }
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+.error-modal {
+    .custom-modal {
+        z-index: 7;
+
+        &__container {
+            width: 446px;
+            top: 50%;
+            bottom: auto;
+            transform: translate(-50%, -50%);
+        }
+
+        &__footer {
+            justify-content: center;
+        }
+    }
+
+    &__text {
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+.phone-input-error-text {
+    position: absolute;
+    font-size: 14px;
+    color: red;
+    top: 0px;
+    right: 0px;
+
+    p {
+        font-size: 14px;
+        color: red;
+    }
+}
+
+.phone-input-error {
+    border: 2px solid $lightRed;
+    text-decoration: underline dotted $lightRed;
+}
+
+.PhoneInput {
+    width: 100%;
+    height: 40px;
+    padding-left: 5px;
+
+    width: 100%;
+    height: 100%;
+    border-radius: 3px 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    input {
+        width: 100%;
+        height: 100%;
+        padding: 9px;
+        border-radius: 4px;
+        background-color: $lightGrey;
+    }
+}
+input:focus::-webkit-input-placeholder {
+    opacity: 0;
+}
+
+input:focus::-moz-placeholder {
+    opacity: 0;
+}
+
+input:focus:-ms-input-placeholder {
+    opacity: 0;
+}
+
+input:focus:-moz-placeholder {
+    opacity: 0;
+}

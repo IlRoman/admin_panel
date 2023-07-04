@@ -1,0 +1,45 @@
+.category-modal {
+  .custom-modal {
+    &__container {
+      width: 446px;
+      top: 50%;
+      bottom: auto;
+      transform: translate(-50%, -50%);
+    }
+
+    &__main {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    &__footer {
+      justify-content: center;
+    }
+  }
+  &__container{
+    width: 100%;
+  }
+  .custom-modal_animated{
+    z-index: 5;
+  }
+  &__label{
+    color: #2e2b2b;
+    opacity: 0.5;
+    padding-bottom: 13px;
+    font-size: 13px;
+
+  }
+  &__item {
+    margin-top: 20px;
+  }
+  &--error{
+    .custom-input{
+      border:2px solid #f2574d;
+    }
+    .text-err{
+      color: red;
+      margin-top: 5px;
+    }
+  }
+
+}

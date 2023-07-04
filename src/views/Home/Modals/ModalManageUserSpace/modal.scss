@@ -1,0 +1,151 @@
+@import "../../../../variables.scss";
+
+.manage-col-modal {
+  .custom-modal {
+    &__container {
+      width: 1003px;
+      top: 50%;
+      bottom: auto;
+      transform: translate(-50%, -50%);
+    }
+
+    &__main {
+      padding: 13px 0 30px 0;
+    }
+  }
+
+  &__search-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__search {
+    width: 289px;
+    height: 38px;
+    margin-right: 30px;
+  }
+
+  &__table {
+    width: 100%;
+    margin-top: 21px;
+    background-color: #f8f8f8;
+  }
+
+  &__table-head {
+    display: grid;
+    grid-template-columns: 3fr 2fr 2fr 2fr;
+    margin: 10px 33px 0 33px;
+    grid-gap: 20px;
+  }
+
+  &__table-head-cell {
+    display: flex;
+    padding: 20px 0px;
+    font-size: 16px;
+    font-weight: 600;
+    align-items: center;
+
+    &_center {
+      justify-content: center;
+    }
+
+    &_left {
+      justify-content: flex-start;
+    }
+
+    &_right {
+      justify-content: flex-end;
+    }
+  }
+
+  &__table-head-title {
+    margin-right: 10px;
+  }
+
+  &__sort {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: #2e2b2b;
+    opacity: 0.5;
+    cursor: pointer;
+    margin-top: 2px;
+  }
+
+  &__arrow-up {
+    width: 10px;
+    height: 10px;
+    transform: rotate(-180deg);
+    margin-bottom: 1px;
+  }
+
+  &__arrow-down {
+    width: 10px;
+    height: 10px;
+    margin-top: 1px;
+  }
+
+  &__table-body {
+    margin: 10px 33px 0 33px;
+    max-height: 190px;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    &::-webkit-scrollbar-track-piece {
+      border-radius: 20px;
+      background: linear-gradient(to right, #fff 20%, #cbcbcc 20%, #cbcbcc 80%, #ffff 80%);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 20px;
+      width: 8px;
+      max-height: 21px;
+      min-height: 21px;
+      height: 21px;
+      background-color: #8dc63f;
+    }
+  }
+
+  .spacer {
+    width: 100%;
+    height: 10px;
+    background-color: #f8f8f8;
+  }
+
+  &__table-body-nodata {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  &__table-body-row {
+    display: grid;
+    grid-template-columns: 3fr 2fr 2fr 2fr;
+    grid-gap: 20px;
+  }
+
+  &__table-body-cell {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 0px;
+    word-break: break-word;
+    &:last-child {
+      justify-content: center;
+    }
+  }
+
+  .custom-checkbox {
+    .checkbox {
+      background-color: #fff;
+      border: 1px solid darkgray;
+    }
+  }
+}

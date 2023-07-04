@@ -1,0 +1,71 @@
+{
+  "name": "akrotonx",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@babel/core": "^7.15.5",
+    "@draft-js-plugins/editor": "^4.1.3",
+    "@draft-js-plugins/video": "^4.1.2",
+    "@emotion/react": "^11.4.1",
+    "@emotion/styled": "^11.3.0",
+    "@mui/material": "^5.0.2",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "axios": "^0.24.0",
+    "dompurify": "^2.3.6",
+    "draft-convert": "^2.1.12",
+    "draft-js": "^0.11.7",
+    "draftjs-to-html": "^0.9.1",
+    "hex-rgb": "^5.0.0",
+    "html-to-draftjs": "^1.5.0",
+    "i18next": "^21.0.2",
+    "i18next-browser-languagedetector": "^6.1.2",
+    "i18next-http-backend": "^1.3.1",
+    "moment": "^2.29.1",
+    "node-sass": "^6.0.1",
+    "react": "^17.0.2",
+    "react-color": "^2.19.3",
+    "react-dom": "^17.0.2",
+    "react-draft-wysiwyg": "^1.14.7",
+    "react-dropzone": "^14.2.1",
+    "react-h5-audio-player": "^3.8.4",
+    "react-i18next": "^11.12.0",
+    "react-phone-number-input": "^3.1.44",
+    "react-player": "^2.10.0",
+    "react-redux": "^7.2.5",
+    "react-router-dom": "^5.3.0",
+    "react-scripts": "4.0.3",
+    "react-slick": "^0.28.1",
+    "react-spinners": "^0.11.0",
+    "react-zoom-pan-pinch": "^2.1.3",
+    "redux": "^4.1.1",
+    "rgb-hex": "^4.0.0",
+    "slick-carousel": "^1.8.1",
+    "web-vitals": "^1.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

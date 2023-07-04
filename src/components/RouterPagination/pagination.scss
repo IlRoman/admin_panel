@@ -1,0 +1,26 @@
+.pagination {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    padding-bottom: 20px;
+    &__per-page {
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+        margin-left: 40px;
+    }
+
+    &__label {
+        margin-right: 30px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__dropdown {
+        width: 50px;
+        display: flex;
+        align-items: center;
+    }
+}

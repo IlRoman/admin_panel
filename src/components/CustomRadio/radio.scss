@@ -1,0 +1,40 @@
+.custom-radio {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &__elem {
+        display: flex;
+        margin-right: 37px;
+        cursor: pointer;
+    }
+
+    &__checkbox {
+        width: 17px;
+        height: 17px;
+        border: 1px solid #8dc63f;
+        opacity: 0.2;
+        border-radius: 50%;
+        margin-right: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &_checked {
+            opacity: 1;
+        }
+    }
+
+    &__dot {
+        background-color: #8dc63f;
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+    }
+
+    &__title {
+        font-size: 13px;
+        color: #2e2b2b;
+        opacity: 0.5;
+    }
+}
